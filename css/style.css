@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+#canvas {
+  width: 70%;
+}
+
+#tools {
+  align-items: center;
+  background-color: #91b6ff;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+.container-range {
+  align-items: stretch;
+  display: flex;
+  flex-flow: column;
+  font-size: 1.3em;
+  height: 7%;
+  justify-content: space-between;
+  text-align: center;
+  width: 60%;
+}
+
+#file-input {
+  background-color: white;
+  display: none;
+}
+
+#label-file-input, #save-button {
+  align-items: center;
+  background-color: #f57373;
+  border: outset 2px;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column;
+  font-size: 1.2em;
+  height: 5%;
+  justify-content: center;
+  overflow: hidden;
+  width: 60%;
+}
+
+#save-button {
+  background-color: #c6c6c6;
+}
+
+#label-file-input:hover {
+  background-color: #d56767;
+}
+
+#save-button:hover {
+  background-color: #aaaaaa;
+}
+
+#label-file-input:active, #save-button:active {
+  border: inset 2px;
+}
