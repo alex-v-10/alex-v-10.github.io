@@ -1,0 +1,438 @@
+@font-face {
+  font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  color: #333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #F2F2F2;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+/* * */
+
+.page-wrapper {
+  min-height: 100%;
+  width: 1200px;
+  background: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* * Navigation (Header) */
+
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-right: 30px;
+}
+
+.navigation-list,
+.navigation-user {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-list {
+  width: 400px;
+}
+
+.navigation-user {
+  width: 270px;
+  margin-left: auto;
+}
+
+.navigation-list-link {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-decoration: none;
+}
+
+/* * Buttons */
+
+.btn {
+  background-color: #756157;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-large {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.btn-second {
+  background-color: #82B3D3;
+}
+
+.btn-selected {
+  background-color: #7DB54F;
+}
+
+.btn-disabled {
+  background-color: #F2F2F2;
+  color: #000;
+}
+
+/* * Main */
+
+.main-container {
+  flex-grow: 1;
+}
+
+/* * Welcome */
+
+.welcome {
+  background: url("../images/welcome/welcome-devider.svg") 0 100%/100% auto no-repeat,
+  url("../images/background/welcome-background.jpg") 0 0/cover no-repeat, #82B3D3;
+  text-align: center;
+}
+
+/* * Section */
+
+.section {
+  text-align: center;
+}
+
+.section-title {
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.section-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.section-decoration {
+  background: #82B3D3 url("../images/background/mailing-background.jpg") 0 0/cover no-repeat;
+  color: #fff;
+}
+
+.section-decoration .section-title {
+  color: #fff;
+}
+
+/* * Advantages */
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages-inner {
+  display: flex;
+}
+
+.advantages-content {
+  width: 400px;
+  height: 384px;
+  display: flex;
+}
+
+.advantages-texts {
+  width: 230px;
+  margin: auto;
+  text-align: center;
+}
+
+.advantages-content-title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.advantages-content-number {
+  color: #000;
+}
+
+/* * Mailing */
+
+.mailing-field {
+  background-color: #F2F2F2;
+}
+
+.mailing-field::placeholder {
+  color: #000;
+  opacity: 0.6;
+}
+
+/* * Contacts */
+
+.contacts-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.socials {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 142px;
+}
+
+.phone-number {
+  color: #000;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+/* * Page intro (filter) */
+
+.page-intro {
+  background: #82B3D3 url("../images/background/page-intro-background.jpg") 0 0/cover no-repeat;
+  color: #fff;
+}
+
+.page-intro-container {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs {
+  list-style: none;
+  margin: 0 0 40px 0;
+  padding: 0;
+}
+
+.breadcrumbs-link {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.catalog-filter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-filter-set {
+  display: flex;
+}
+
+.catalog-filter-group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-group-first {
+  margin-right: 70px;
+}
+
+.catalog-filter-range{
+  width: 290px;
+}
+
+.catalog-filter-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  padding: 0;
+}
+
+.catalog-filter-price-number {
+  background-color: transparent;
+  color: inherit;
+  width: 130px;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-price-number::placeholder {
+  color: #fff;
+  opacity: 0.3;
+  text-align: right;
+}
+
+.reset-btn {
+  background-color: transparent;
+  border: none;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.catalog-filter-buttons {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* * Filter result */
+
+.filter-result {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.catalog-sorting {
+  display: flex;
+  align-items: center;
+}
+
+.catalog-sorting-text {
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0 191px 0 0;
+}
+
+.catalog-sorting .select-control {
+  width: 290px;
+}
+
+
+.sorting-display {
+  list-style: none;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+}
+
+/* * Cards */
+
+.catalog-card-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-card-title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.catalog-card-rating {
+  background-color: #F2F2F2;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog-divider {
+  border: 1px solid #E6E6E6;
+}
+
+/* * Pagination */
+
+.catalog-pages {
+  display: flex;
+  align-items: center;
+}
+
+.pagination {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* * Select control */
+
+.catalog-pages-number {
+  margin: 0 51px 0 auto;
+}
+
+.catalog-pages .select-control {
+  width: 160px;
+}
+
+.select-control {
+  color: inherit;
+  height: 48px;
+}
+
+/* * Utility colors */
+
+.background-blue {
+  background-color: #82B3D3;
+}
+
+.background-blue-012 {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.background-blue-02 {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.text-white {
+  color: #fff;
+}
