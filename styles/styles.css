@@ -250,6 +250,7 @@ select {
   flex-grow: 1;
   overflow: hidden;
   object-fit: cover;
+  object-position: right center;
 }
 
 .advantages-content {
