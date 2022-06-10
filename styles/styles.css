@@ -40,57 +40,24 @@ select {
   font-size: 100%;
 }
 
-/* * */
-
-.page-wrapper {
-  min-height: 100%;
-  width: 1200px;
-  background: #fff;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
-/* * Navigation (Header) */
-
-.navigation {
-  display: flex;
-  width: 1060px;
-  margin: 0 auto;
-}
-
-.logo {
-  margin-right: 30px;
-}
-
-.navigation-list,
-.navigation-user {
-  list-style: none;
-  margin: 0;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
   padding: 0;
-}
-
-.navigation-list {
-  width: 400px;
-}
-
-.navigation-user {
-  width: 270px;
-  margin-left: auto;
-}
-
-.navigation-list-link {
-  color: #000;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 26px;
-  text-decoration: none;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* * Buttons */
 
 .btn {
+  display: block;
+  text-align: center;
   background-color: #756157;
   color: #fff;
   font-size: 16px;
@@ -98,6 +65,8 @@ select {
   line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 9px 15px 8px;
+  border-radius: 4px;
 }
 
 .btn-large {
@@ -118,6 +87,94 @@ select {
   color: #000;
 }
 
+/* * */
+
+.page-wrapper {
+  min-height: 100%;
+  max-width: 1200px;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+/* * Navigation (Header) */
+
+.navigation {
+  display: flex;
+}
+
+.logo {
+  margin-right: 30px;
+  height: 65px;
+  z-index: 1;
+}
+
+.navigation-list,
+.navigation-user {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.navigation-list {
+  flex: 1 1 400px;
+}
+
+.navigation-list-link {
+  display: block;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-decoration: none;
+  height: 100%;
+  padding: 20px 0 19px 0;
+  margin: 0 17px;
+  min-width: 42px;
+  text-align: center;
+}
+
+.navigation-list-link-current {
+  padding-bottom: 16px;
+  border-bottom: 3px solid #756257;
+}
+
+.navigation-user {
+  width: 400px;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+.navigation-user-link {
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  padding: 20px 10px 19px;
+  min-width: 42px;
+  min-height: 65px;
+}
+
+.navigation-user-item-btn {
+  display: flex;
+  align-items: center;
+  min-height: 65px;
+}
+
+.btn-user {
+  min-width: 130px;
+  margin-left: 20px;
+}
+
 /* * Main */
 
 .main-container {
@@ -128,7 +185,7 @@ select {
 
 .welcome {
   background: url("../images/welcome/welcome-devider.svg") 0 100%/100% auto no-repeat,
-  url("../images/background/welcome-background.jpg") 0 0/cover no-repeat, #82B3D3;
+    url("../images/background/welcome-background.jpg") 0 0/cover no-repeat, #82B3D3;
   text-align: center;
 }
 
@@ -136,6 +193,9 @@ select {
 
 .section {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-title {
@@ -174,16 +234,34 @@ select {
   display: flex;
 }
 
+.advantages-item:not(.advantages-item-wide) {
+  width: calc(100% / 3);
+}
+
+.advantages-item-wide {
+  width: 100%;
+}
+
+.advantages-inner .advantages-content {
+  width: calc(100% / 3);
+}
+
+.advantages-image {
+  flex-grow: 1;
+  overflow: hidden;
+  object-fit: cover;
+}
+
 .advantages-content {
-  width: 400px;
   height: 384px;
   display: flex;
 }
 
-.advantages-texts {
-  width: 230px;
+.advantages-content-container {
+  max-width: 230px;
   margin: auto;
   text-align: center;
+  padding: 15px;
 }
 
 .advantages-content-title {
@@ -201,6 +279,10 @@ select {
 
 /* * Mailing */
 
+.mailing {
+  display: flex;
+}
+
 .mailing-field {
   background-color: #F2F2F2;
 }
@@ -214,8 +296,6 @@ select {
 
 .contacts-container {
   display: flex;
-  width: 1060px;
-  margin: 0 auto;
   justify-content: space-between;
 }
 
@@ -238,11 +318,6 @@ select {
 .page-intro {
   background: #82B3D3 url("../images/background/page-intro-background.jpg") 0 0/cover no-repeat;
   color: #fff;
-}
-
-.page-intro-container {
-  width: 1060px;
-  margin: 0 auto;
 }
 
 .page-title {
@@ -268,10 +343,13 @@ select {
 .catalog-filter {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 50px;
 }
 
 .catalog-filter-set {
   display: flex;
+  margin-bottom: 70px;
 }
 
 .catalog-filter-group {
@@ -284,7 +362,7 @@ select {
   margin-right: 70px;
 }
 
-.catalog-filter-range{
+.catalog-filter-range {
   width: 290px;
 }
 
@@ -330,11 +408,6 @@ select {
 
 /* * Filter result */
 
-.filter-result {
-  width: 1060px;
-  margin: 0 auto;
-}
-
 .catalog-sorting {
   display: flex;
   align-items: center;
@@ -346,19 +419,21 @@ select {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0 191px 0 0;
+  margin: 0;
+  margin-right: 30px;
 }
 
 .catalog-sorting .select-control {
   width: 290px;
+  margin: 0 78px 0 auto
 }
 
 
 .sorting-display {
   list-style: none;
   margin: 0;
-  margin-left: auto;
   padding: 0;
+  min-width: 160px;
 }
 
 /* * Cards */
@@ -367,6 +442,22 @@ select {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 66px;
+  border-bottom: 1px solid #E6E6E6;
+  margin-bottom: 30px;
+}
+
+.catalog-card-item {
+  box-sizing: border-box;
+  padding: 20px;
+  margin-right: 18px;
+  width: 340px;
+}
+
+.catalog-card-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-card-title {
@@ -399,24 +490,30 @@ select {
   margin: 0;
   padding: 0;
   display: flex;
+  margin-right: 30px;
 }
+
 .pagination-item:not(:last-child) {
   margin-right: 8px;
 }
 
+.catalog-pages-group {
+  width: 386px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+}
+
 /* * Select control */
-
-.catalog-pages-number {
-  margin: 0 51px 0 auto;
-}
-
-.catalog-pages .select-control {
-  width: 160px;
-}
 
 .select-control {
   color: inherit;
   height: 48px;
+}
+
+.catalog-pages .select-control {
+  width: 160px;
 }
 
 /* * Utility colors */
