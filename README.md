@@ -1,8 +1,8 @@
 # alex-v-10.github.io
 HTML Academy  
-&nbsp;&nbsp;\[html, css\]  
+&nbsp;&nbsp;html, css  
 &nbsp;&nbsp;&nbsp;&nbsp;- Седона-1 ([git-hub](https://github.com/alex-v-10/2116963-sedona-34), [gh-pages](https://alex-v-10.github.io/2116963-sedona-34/))  
-&nbsp;&nbsp;\[html, less, адаптив\]  
+&nbsp;&nbsp;html, less, адаптив  
 &nbsp;&nbsp;&nbsp;&nbsp;- Седона-2 ([git-hub](https://github.com/alex-v-10/2116963-sedona-26), [gh-pages](https://alex-v-10.github.io/2116963-sedona-26/))  
 &nbsp;&nbsp;\[js (leaflet, nouislider, pristine)\]  
 &nbsp;&nbsp;&nbsp;&nbsp;- Кексобукинг ([git-hub](https://github.com/alex-v-10/2116963-keksobooking-27), [gh-pages](https://alex-v-10.github.io/2116963-keksobooking-27/))  
