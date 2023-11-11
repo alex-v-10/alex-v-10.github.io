@@ -3,7 +3,7 @@ html, css
 &nbsp;&nbsp;- Седона-1 ([git-hub](https://github.com/alex-v-10/2116963-sedona-34), [gh-pages](https://alex-v-10.github.io/2116963-sedona-34/))  
 html, less, gulp  
 &nbsp;&nbsp;- Седона-2 ([git-hub](https://github.com/alex-v-10/2116963-sedona-26), [gh-pages](https://alex-v-10.github.io/2116963-sedona-26/))  
-js (leaflet, nouislider, pristine, fetch)  
+js  
 &nbsp;&nbsp;- Кексобукинг ([git-hub](https://github.com/alex-v-10/2116963-keksobooking-27), [gh-pages](https://alex-v-10.github.io/2116963-keksobooking-27/))  
 html, scss, js  
 &nbsp;&nbsp;- Drink2Go ([git-hub](https://github.com/alex-v-10/Drink2Go), [gh-pages](https://alex-v-10.github.io/Drink2Go/))  
